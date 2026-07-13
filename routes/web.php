@@ -22,7 +22,13 @@ Route::middleware(['auth', 'verified'])->group(function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    $stats = [
+        'courses' => \App\Models\Course::count(),
+        'categories' => \App\Models\Category::count(),
+        'teachers' => \App\Models\Teacher::count(),
+        'students' => \App\Models\User::role('student')->count(),
+    ];
+    return view('dashboard', compact('stats'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
