@@ -61,8 +61,6 @@
                     Skill yang Kamu Pelajari Hari Ini, <br>
 <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-teal to-accent-violet relative inline-block">
                         Bisa Jadi Karier 6 Bulan Lagi.
-                        {{-- SVG underline for 'Bisa Jadi Karier 6 Bulan Lagi.' --}}
-                        <svg class="absolute -bottom-2 left-0 w-[90%]" viewBox="0 0 200 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 7C45.5 -1.5 130 -2.5 198 7" stroke="url(#paint0_linear)" stroke-width="3" stroke-linecap="round"/><defs><linearGradient id="paint0_linear" x1="2" y1="7" x2="198" y2="7" gradientUnits="userSpaceOnUse"><stop stop-color="#FF8A50"/><stop offset="1" stop-color="#E91E63"/></linearGradient></defs></svg>
                     </span>
                 </h1>
                 
