@@ -34,7 +34,7 @@
                 <li><a href="#Pricing" class="hover:text-text-main transition-colors">Pricing</a></li>
                 <li><a href="#FAQ" class="hover:text-text-main transition-colors">Benefits</a></li>
                 <li><a href="#Zero-to-Success" class="hover:text-text-main transition-colors">Success Stories</a></li>
-                <li><a href="#" class="hover:text-text-main transition-colors">Blog</a></li>
+                <li><a href="#footer" class="hover:text-text-main transition-colors">Blog</a></li>
             </ul>
             <div class="flex items-center gap-4">
                 @auth
@@ -808,7 +808,7 @@
             </div>
         </div>
     </section>
-    <footer data-aos="fade-up" class="w-full max-w-7xl mx-auto flex flex-col pt-[70px] pb-[50px] px-4 md:px-[100px] gap-[50px] bg-white/5 backdrop-blur-md/5 rounded-3xl">
+    <footer id="footer" data-aos="fade-up" class="w-full max-w-7xl mx-auto flex flex-col pt-[70px] pb-[50px] px-4 md:px-[100px] gap-[50px] bg-white/5 backdrop-blur-md/5 rounded-3xl">
         <div class="flex flex-col lg:flex-row justify-between gap-10 lg:gap-0">
             <a href="" class="flex items-center gap-3 h-fit">
                 <div class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-accent-teal to-accent-violet rounded-2xl shadow-xl shadow-accent-teal/30">
