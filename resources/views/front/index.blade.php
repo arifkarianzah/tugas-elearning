@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,13 +27,13 @@
             </a>
             <ul class="hidden lg:flex items-center gap-8 text-sm text-text-muted">
                 <li class="relative">
-                    <a href="#" class="font-semibold text-text-main">Home</a>
+                    <a href="#hero-section" class="font-semibold text-text-main">Home</a>
                     <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-[2px] bg-accent-amber rounded-full"></div>
                 </li>
-                <li><a href="#" class="hover:text-text-main transition-colors">Courses</a></li>
-                <li><a href="{{ route('front.pricing') }}" class="hover:text-text-main transition-colors">Pricing</a></li>
-                <li><a href="#" class="hover:text-text-main transition-colors">Benefits</a></li>
-                <li><a href="#" class="hover:text-text-main transition-colors">Success Stories</a></li>
+                <li><a href="#Popular-Courses" class="hover:text-text-main transition-colors">Courses</a></li>
+                <li><a href="#Pricing" class="hover:text-text-main transition-colors">Pricing</a></li>
+                <li><a href="#FAQ" class="hover:text-text-main transition-colors">Benefits</a></li>
+                <li><a href="#Zero-to-Success" class="hover:text-text-main transition-colors">Success Stories</a></li>
                 <li><a href="#" class="hover:text-text-main transition-colors">Blog</a></li>
             </ul>
             <div class="flex items-center gap-4">
