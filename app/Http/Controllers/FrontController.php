@@ -9,10 +9,12 @@ use App\Models\SubscribeTransaction;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
-{
+{   
     public function index()
     {
-        return view('front.index');
+        $categories = Category::all();
+        $courses = Course::with(['category', 'teacher', 'students'])->orderBy('id', 'desc')->get();
+        return view('front.index', compact('categories', 'courses'));
     }
 
     public function details(Course $course)

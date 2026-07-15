@@ -29,7 +29,7 @@
                     </div>
                     <div class="hidden md:flex flex-col">
                         <p class="text-text-muted text-sm">Videos</p>
-                        <h3 class="text-text-main text-xl font-bold">{{ $course->course_videos->count() ?? 0 }}</h3>
+                        <h3 class="text-text-main text-xl font-bold">{{ $course->videos->count() ?? 0 }}</h3>
                     </div>
                     <div class="hidden md:flex flex-col">
                         <p class="text-text-muted text-sm">Teacher</p>

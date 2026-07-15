@@ -53,12 +53,9 @@ class CategoryController extends Controller
         return view('admin.categories.edit', compact('category'));
     }
 
-    public function update(Request $request, Category $category)
+    public function update(\App\Http\Requests\UpdateCategoryRequest $request, Category $category)
     {
-        $validated = $request->validate([
-            'name' => ['required', 'string', 'max:255'],
-            'icon' => ['nullable', 'image', 'mimes:png,jpg,jpeg'],
-        ]);
+        $validated = $request->validated();
 
         DB::transaction(function () use ($validated, $request, $category) {
             if ($request->hasFile('icon')) {

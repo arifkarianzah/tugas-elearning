@@ -18,18 +18,26 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    @hasrole('owner')
                     <x-nav-link :href="route('admin.categories.index')" :active="request()->routeIs('admin.categories.index')">
                         {{ __('Manage Categories') }}
                     </x-nav-link>
+                    @endhasrole
+                    
+                    @hasanyrole('owner|teacher')
                     <x-nav-link :href="route('admin.courses.index')" :active="request()->routeIs('admin.courses.index')">
                         {{ __('Manage Courses') }}
                     </x-nav-link>
+                    @endhasanyrole
+                    
+                    @hasrole('owner')
                     <x-nav-link :href="route('admin.teachers.index')" :active="request()->routeIs('admin.teachers.index')">
                         {{ __('Manage Teachers') }}
                     </x-nav-link>
                     <x-nav-link :href="route('admin.subscribe_transactions.index')" :active="request()->routeIs('admin.subscribe_transactions.index')">
                         {{ __('Manage Subscriptions') }}
                     </x-nav-link>
+                    @endhasrole
                 </div>
             </div>
 
@@ -83,18 +91,26 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            @hasrole('owner')
             <x-responsive-nav-link :href="route('admin.categories.index')" :active="request()->routeIs('admin.categories.index')">
                 {{ __('Manage Categories') }}
             </x-responsive-nav-link>
+            @endhasrole
+            
+            @hasanyrole('owner|teacher')
             <x-responsive-nav-link :href="route('admin.courses.index')" :active="request()->routeIs('admin.courses.index')">
                 {{ __('Manage Courses') }}
             </x-responsive-nav-link>
+            @endhasanyrole
+
+            @hasrole('owner')
             <x-responsive-nav-link :href="route('admin.teachers.index')" :active="request()->routeIs('admin.teachers.index')">
                 {{ __('Manage Teachers') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('admin.subscribe_transactions.index')" :active="request()->routeIs('admin.subscribe_transactions.index')">
                 {{ __('Manage Subscriptions') }}
             </x-responsive-nav-link>
+            @endhasrole
         </div>
 
         <!-- Responsive Settings Options -->
